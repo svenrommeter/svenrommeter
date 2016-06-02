@@ -1,0 +1,25 @@
+<ion-view view-title="SvenROMmeter" hide-nav-bar="true">
+<ion-content>
+  <center>
+    <div class="logo_pos center">
+      <img src="img/logo.png" class="logo">
+    </div>
+    <div class="frame">
+      <div class="user_btn" style="display: {{display_user}}">
+        <a class="button button-block button-dark" href="#/event/body" style="width: 70%">{{user}}</a>
+      </div>
+      <div class="list user_btn">
+        <label class="item item-input add_border" style="width: 70%">
+          <input ng-model="newUser" type="text" placeholder="New user...">
+        </label>
+      </div>
+      <div>
+        <button class="button button-small button-dark pad_btn" href="#/event/body" style="width: 40%" ng-click="insert(newUser)">Add User</button>
+      </div>
+      <div class="other_users_btn" style="display: {{display_user}}">
+        <a href="#/user_list" style="width: 70%">Other Users</a>
+      </div>
+    </div>
+  </center>
+</ion-content>
+</ion-view>

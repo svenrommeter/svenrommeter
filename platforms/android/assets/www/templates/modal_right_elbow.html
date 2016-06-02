@@ -1,0 +1,14 @@
+<ion-view view-title="Right Elbow">
+<ion-nav-bar class="bar-dark">
+  <ion-nav-buttons side="primary">
+    <a href="#/event/body" class="button button-icon button-clear">Cancel</a>
+  </ion-nav-buttons>
+</ion-nav-bar>
+ <ion-content class="padding">
+   <div class="list">
+    <a class="button button-full button-dark" ui-sref="measurement_mode_1({jname: 'Flexion/Extension', movement: 'right_elbow_flexion', joint: 'right_elbow', gen_mov: 'elbow_flexion'})">Flexion/Extension</a>
+    <a class="button button-full button-dark" ui-sref="measurement_mode_2({jname: 'Supination', movement: 'right_elbow_supination', joint: 'right_elbow', gen_mov: 'elbow_supination'})">Supination</a>
+    <a class="button button-full button-dark" ui-sref="measurement_mode_2({jname: 'Pronation', movement: 'right_elbow_pronation', joint: 'right_elbow', gen_mov: 'elbow_pronation'})">Pronation</a>
+   </div>
+ </ion-content>
+</ion-view>

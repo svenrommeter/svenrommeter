@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\SvenROMmeter\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\menu\\select_action_menu.xml",
+        "source": "C:\\SvenROMmeter\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\18.48.477.13\\res\\menu\\select_action_menu.xml"
+    },
+    {
+        "merged": "C:\\ultimo update\\appName\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\menu\\select_action_menu.xml",
+        "source": "C:\\ultimo update\\appName\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\18.48.477.13\\res\\menu\\select_action_menu.xml"
+    }
+]

@@ -1,0 +1,11 @@
+<ion-view view-title="User List">
+   <ion-content>
+            <ul class="list">
+                <div ng-repeat="users in user_list | reverse">
+                <li class="item">
+                    {{users.name}}
+                </li>
+                </div>
+            </ul>
+   </ion-content>
+</ion-view>

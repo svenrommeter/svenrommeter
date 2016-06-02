@@ -1,0 +1,20 @@
+<ion-view view-title="User List">
+<ion-nav-bar class="bar-dark">
+  <ion-nav-buttons side="left">
+    <a href="#/event/body" class="button button-icon button-clear ion-ios-arrow-back">Back</a>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="primary">
+    <a class="button button-icon icon ion-android-person-add" href="#/home"></a>&nbsp;
+    <a class="button button-icon icon ion-android-create" href="#/user_delete"></a>
+  </ion-nav-buttons>
+</ion-nav-bar>
+   <ion-content>
+        <ul class="list">
+            <div ng-repeat="users in user_list | reverse">
+            <a class="item" href="#/event/body"  ng-click="insertToCurrent(users.user_id, users.name)">
+              <span style="font-weight: bold">{{users.name}}</span>
+            </a>
+            </div>
+        </ul>
+   </ion-content>
+</ion-view>

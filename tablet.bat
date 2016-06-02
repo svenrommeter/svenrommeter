@@ -1,0 +1,1 @@
+ionic run android --target=41071265164821e7

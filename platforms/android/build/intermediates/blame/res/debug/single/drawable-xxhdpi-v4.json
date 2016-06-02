@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\ultimo update\\appName\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_search.png",
+        "source": "C:\\ultimo update\\appName\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\18.48.477.13\\res\\drawable-xxhdpi\\ic_search.png"
+    },
+    {
+        "merged": "C:\\SvenROMmeter\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_warning.png",
+        "source": "C:\\SvenROMmeter\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\18.48.477.13\\res\\drawable-xxhdpi\\ic_warning.png"
+    },
+    {
+        "merged": "C:\\SvenROMmeter\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_menu_share_holo_light.png",
+        "source": "C:\\SvenROMmeter\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\18.48.477.13\\res\\drawable-xxhdpi\\ic_menu_share_holo_light.png"
+    },
+    {
+        "merged": "C:\\ultimo update\\appName\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\verify_checkmark.png",
+        "source": "C:\\ultimo update\\appName\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\18.48.477.13\\res\\drawable-xxhdpi\\verify_checkmark.png"
+    },
+    {
+        "merged": "C:\\ultimo update\\appName\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_warning.png",
+        "source": "C:\\ultimo update\\appName\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\18.48.477.13\\res\\drawable-xxhdpi\\ic_warning.png"
+    },
+    {
+        "merged": "C:\\SvenROMmeter\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\verify_checkmark.png",
+        "source": "C:\\SvenROMmeter\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\18.48.477.13\\res\\drawable-xxhdpi\\verify_checkmark.png"
+    },
+    {
+        "merged": "C:\\SvenROMmeter\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_search.png",
+        "source": "C:\\SvenROMmeter\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\18.48.477.13\\res\\drawable-xxhdpi\\ic_search.png"
+    },
+    {
+        "merged": "C:\\ultimo update\\appName\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_menu_share_holo_light.png",
+        "source": "C:\\ultimo update\\appName\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\18.48.477.13\\res\\drawable-xxhdpi\\ic_menu_share_holo_light.png"
+    },
+    {
+        "merged": "C:\\ultimo update\\appName\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\icon.png",
+        "source": "C:\\ultimo update\\appName\\platforms\\android\\res\\drawable-xxhdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\SvenROMmeter\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\icon.png",
+        "source": "C:\\SvenROMmeter\\platforms\\android\\res\\drawable-xxhdpi\\icon.png"
+    }
+]

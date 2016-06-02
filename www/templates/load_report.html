@@ -1,0 +1,719 @@
+<ion-view view-title="Report">
+<ion-nav-bar class="bar-dark">
+<ion-nav-buttons side="left">
+  <a href="#/report_mgmt" class="button button-icon button-clear ion-ios-arrow-back">Back</a>
+</ion-nav-buttons>
+<ion-nav-buttons side="primary">
+    <a class="button button-icon icon ion-android-share" ng-click="generate_pdf()">Export</a>
+</ion-nav-buttons>
+</ion-nav-bar>
+<ion-content>
+    <ion-list>
+      <div class="item low-pad-item head">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">MOVEMENT</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 centered">RANGE</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">LEFT</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">RIGHT</div>
+          </div>
+        </div>
+      </div>
+      <!--// Joint-->
+      <div class="item low-pad-item sub">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w100">Neck</div>
+          </div>
+        </div>
+      </div>
+      <!--// Item-->
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Flexion</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">70&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.neck_flexion}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.neck_flexion}}</div>
+          </div>                      
+        </div>
+      </div>
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Extension</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">70&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.neck_extension}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.neck_extension}}</div>
+          </div>                      
+        </div>
+      </div>
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Lateral Flexion</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">70&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.neck_lateral_flexion}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.neck_lateral_flexion}}</div>
+          </div>                      
+        </div>
+      </div>
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Rotation</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">70&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.neck_rotation}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.neck_rotation}}</div>
+          </div>                      
+        </div>
+      </div>
+      <!--// Joint-->
+      <div class="item low-pad-item sub">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w100">Shoulder</div>
+          </div>
+        </div>
+      </div>
+      <!--// Item-->
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Flexion</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">180&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.left_shoulder_flexion}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.right_shoulder_flexion}}</div>
+          </div>                      
+        </div>
+      </div>
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Extension</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">60&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.left_shoulder_extension}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.right_shoulder_extension}}</div>
+          </div>                      
+        </div>
+      </div>
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Abduction</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">180&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.left_shoulder_abduction}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.right_shoulder_abduction}}</div>
+          </div>                      
+        </div>
+      </div>
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Internal Rotation</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">80&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.left_shoulder_internal_rotation}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.right_shoulder_internal_rotation}}</div>
+          </div>                      
+        </div>
+      </div>
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">External Rotation</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">60&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.left_shoulder_external_rotation}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.right_shoulder_external_rotation}}</div>
+          </div>                      
+        </div>
+      </div>
+      <!--// Joint-->
+      <div class="item low-pad-item sub">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w100">Elbow &amp; Forearm</div>
+          </div>
+        </div>
+      </div>
+      <!--// Item-->
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Flexion/Extension</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">150&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.left_elbow_flexion}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.right_elbow_flexion}}</div>
+          </div>                      
+        </div>
+      </div>
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Supination</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">80&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.left_elbow_supination}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.right_elbow_supination}}</div>
+          </div>                      
+        </div>
+      </div>
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Pronation</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">80&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.left_elbow_pronation}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.right_elbow_pronation}}</div>
+          </div>                      
+        </div>
+      </div>
+      <!--// Joint-->
+      <div class="item low-pad-item sub">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w100">Wrist</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+        </div>
+      </div>
+      <!--// Item-->
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Flexion</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">0-80&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.left_wrist_flexion}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.right_wrist_flexion}}</div>
+          </div>                      
+        </div>
+      </div>
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Extension</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">0-70&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.left_wrist_extension}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.right_wrist_extension}}</div>
+          </div>                      
+        </div>
+      </div>
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Radial Deviation</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">0-20&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.left_wrist_radial_deviation}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.right_wrist_radial_deviation}}</div>
+          </div>                      
+        </div>
+      </div>
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Ulnar Deviation</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">0-30&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.left_wrist_ulnar_deviation}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.right_wrist_ulnar_deviation}}</div>
+          </div>                      
+        </div>
+      </div>
+      <!--// Joint-->
+      <div class="item low-pad-item sub">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w100">Trunk</div>
+          </div>
+        </div>
+      </div>
+      <!--// Item-->
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Flexion</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.trunk_flexion}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.trunk_flexion}}</div>
+          </div>                      
+        </div>
+      </div>
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Extension</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.trunk_extension}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.trunk_extension}}</div>
+          </div>                      
+        </div>
+      </div>
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Lateral Flexion</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.trunk_lateral_flexion}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.trunk_lateral_flexion}}</div>
+          </div>                      
+        </div>
+      </div>
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Rotation</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.trunk_rotation}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.trunk_rotation}}</div>
+          </div>                      
+        </div>
+      </div>
+      <!--// Joint-->
+      <div class="item low-pad-item sub">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w100">Hip</div>
+          </div>
+        </div>
+      </div>
+      <!--// Item-->
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Flexion</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">120&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.left_hip_flexion}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.right_hip_flexion}}</div>
+          </div>                      
+        </div>
+      </div>
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Extension</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">30&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.left_hip_extension}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.right_hip_extension}}</div>
+          </div>                      
+        </div>
+      </div>
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Abduction</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">45&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.left_hip_abduction}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.right_hip_abduction}}</div>
+          </div>                      
+        </div>
+      </div>
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Adduction</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">30&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.left_hip_adduction}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.right_hip_adduction}}</div>
+          </div>                      
+        </div>
+      </div>
+      <!--// Joint-->
+      <div class="item low-pad-item sub">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w100">Knee</div>
+          </div>
+        </div>
+      </div>
+      <!--// Item-->
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Flexion/Extension</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">135&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.left_knee_flexion}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.right_knee_flexion}}</div>
+          </div>                      
+        </div>
+      </div>
+            <!--// Joint-->
+      <div class="item low-pad-item sub">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w100">Ankle</div>
+          </div>
+        </div>
+      </div>
+      <!--// Item-->
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Dorsiflexion</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">20&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.left_ankle_dorsiflexion}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.right_ankle_dorsiflexion}}</div>
+          </div>                      
+        </div>
+      </div>
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Plantar Flexion</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">50&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.left_ankle_plantar_flexion}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.right_ankle_plantar_flexion}}</div>
+          </div>                      
+        </div>
+      </div>
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Inversion</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">35&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.left_ankle_inversion}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.right_ankle_inversion}}</div>
+          </div>                      
+        </div>
+      </div>
+      <div class="item low-pad-item">
+        <div class="flex-container wrap">
+          <div>
+            <div class="column_w20">Eversion</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter"></div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">15&deg;</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.left_ankle_eversion}}</div>
+          </div>
+          <div>
+            <div class="column_w20 tpCenter">{{result.right_ankle_eversion}}</div>
+          </div>                      
+        </div>
+      </div>
+  </ion-list>
+  <div id="exportable" style="display: none">
+        <style type="text/css">
+    table.tableizer-table {
+      font-size: 12px;
+      border: 1px solid #CCC; 
+      font-family: Arial, Helvetica, sans-serif;
+    } 
+    .tableizer-table td {
+      padding: 4px;
+      margin: 3px;
+      border: 1px solid #CCC;
+    }
+    .tableizer-table th {
+      background-color: #8B8B8B; 
+      color: #FFF;
+      font-weight: bold;
+    }
+  </style>
+  <table class="tableizer-table">
+  <thead><tr class="tableizer-firstrow"><th>Measurements Report</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr></thead><tbody>
+   <tr><td>Movement</td><td> Expected Range</td><td> Left </td><td>Right</td></tr>
+   <tr><td>Neck</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+   <tr><td>Flexion</td><td>70&deg;</td><td>{{result.neck_flexion}}</td><td>{{result.neck_flexion}}</td></tr>
+   <tr><td>Extension</td><td>70&deg;</td><td>{{result.neck_extension}}</td><td>{{result.neck_extension}}</td></tr>
+   <tr><td>Lateral Flexion</td><td>70&deg;</td><td>{{result.neck_lateral_flexion}}</td><td>{{result.neck_lateral_flexion}}</td></tr>
+   <tr><td>Rotation</td><td>70&deg;</td><td>{{result.neck_rotation}}</td><td>{{result.neck_rotation}}</td></tr>
+   <tr><td>Shoulder</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+   <tr><td>Flexion </td><td>180&deg;</td><td>{{result.left_shoulder_flexion}}</td><td>{{result.right_shoulder_flexion}}</td></tr>
+   <tr><td>Extension </td><td>60&deg;</td><td>{{result.left_shoulder_extension}}</td><td>{{result.right_shoulder_extension}}</td></tr>
+   <tr><td>Abduction</td><td>180&deg;</td><td>{{result.left_shoulder_abduction}}</td><td>{{result.right_shoulder_abduction}}</td></tr>
+   <tr><td>Internal Rotation</td><td>80&deg;</td><td>{{result.left_shoulder_internal_rotation}}</td><td>{{result.right_shoulder_internal_rotation}}</td></tr>
+   <tr><td>External Rotation</td><td>60&deg;</td><td>{{result.left_shoulder_external_rotation}}</td><td>{{result.right_shoulder_external_rotation}}</td></tr>
+   <tr><td>Elbow &amp; Forearm</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+   <tr><td>Flexion/Extension</td><td>150&deg;</td><td>{{result.left_elbow_flexion}}</td><td>{{result.right_elbow_flexion}}</td></tr>
+   <tr><td>Supination</td><td>80&deg;</td><td>{{result.left_elbow_supination}}</td><td>{{result.right_elbow_supination}}</td></tr>
+   <tr><td>Pronation</td><td>80&deg;</td><td>{{result.left_elbow_pronation}}</td><td>{{result.right_elbow_pronation}}</td></tr>
+   <tr><td>Wrist</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+   <tr><td>Flexion</td><td>0-80&deg;</td><td>{{result.left_wrist_flexion}}</td><td>{{result.right_wrist_flexion}}</td></tr>
+   <tr><td>Extension</td><td>0-70&deg;</td><td>{{result.left_wrist_extension}}</td><td>{{result.right_wrist_extension}}</td></tr>
+   <tr><td>Radial Deviation</td><td>0-20&deg;</td><td>{{result.left_wrist_radial_deviation}}</td><td>{{result.right_wrist_radial_deviation}}</td></tr>
+   <tr><td>Ulnar Deviation</td><td>0-30&deg;</td><td>{{result.left_wrist_ulnar_deviation}}</td><td>{{result.right_wrist_ulnar_deviation}}</td></tr>
+   <tr><td>Trunk</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+   <tr><td>Flexion</td><td>&nbsp;</td><td>{{result.trunk_flexion}}</td><td>{{result.trunk_flexion}}</td></tr>
+   <tr><td>Extension</td><td>&nbsp;</td><td>{{result.trunk_extension}}</td><td>{{result.trunk_extension}}</td></tr>
+   <tr><td>Lateral Flexion</td><td>&nbsp;</td><td>{{result.trunk_lateral_flexion}}</td><td>{{result.trunk_lateral_flexion}}</td></tr>
+   <tr><td>Rotation</td><td>&nbsp;</td><td>{{result.trunk_rotation}}</td><td>{{result.trunk_rotation}}</td></tr>
+   <tr><td>Hip</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+   <tr><td>Flexion </td><td>120&deg;</td><td>{{result.left_hip_flexion}}</td><td>{{result.right_hip_flexion}}</td></tr>
+   <tr><td>Extension</td><td>30&deg;</td><td>{{result.left_hip_extension}}</td><td>{{result.right_hip_extension}}</td></tr>
+   <tr><td>Abduction</td><td>45&deg;</td><td>{{result.left_hip_abduction}}</td><td>{{result.right_hip_abduction}}</td></tr>
+   <tr><td>Adduction</td><td>30&deg;</td><td>{{result.left_hip_adduction}}</td><td>{{result.right_hip_adduction}}</td></tr>
+   <tr><td>Knee</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+   <tr><td>Flexion/Extension</td><td>135&deg;</td><td>{{result.left_knee_flexion}}</td><td>{{result.right_knee_flexion}}</td></tr>
+   <tr><td>Ankle</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+   <tr><td>Dorsiflexion</td><td>20&deg;</td><td>{{result.left_ankle_dorsiflexion}}</td><td>{{result.right_ankle_dorsiflexion}}</td></tr>
+   <tr><td>Plantar Flexion</td><td>50&deg;</td><td>{{result.left_ankle_plantar_flexion}}</td><td>{{result.right_ankle_plantar_flexion}}</td></tr>
+   <tr><td>Inversion</td><td>35&deg;</td><td>{{result.left_ankle_inversion}}</td><td>{{result.right_ankle_inversion}}</td></tr>
+   <tr><td>Eversion</td><td>15&deg;</td><td>{{result.left_ankle_eversion}}</td><td>{{result.right_ankle_eversion}}</td></tr>
+  </tbody></table>
+  </div>
+</ion-content>
+</ion-view>

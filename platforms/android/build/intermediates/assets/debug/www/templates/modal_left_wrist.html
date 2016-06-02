@@ -1,0 +1,15 @@
+<ion-view view-title="Left Wrist">
+<ion-nav-bar class="bar-dark">
+  <ion-nav-buttons side="primary">
+    <a href="#/event/body" class="button button-icon button-clear">Cancel</a>
+  </ion-nav-buttons>
+</ion-nav-bar>
+ <ion-content class="padding">
+   <div class="list">
+    <a class="button button-full button-dark" ui-sref="measurement_mode_1({jname: 'Flexion', movement: 'left_wrist_flexion', joint: 'left_wrist', gen_mov: 'wrist_flexion'})">Flexion</a>
+    <a class="button button-full button-dark" ui-sref="measurement_mode_1({jname: 'Extension', movement: 'left_wrist_extension', joint: 'left_wrist', gen_mov: 'wrist_extension'})">Extension</a>
+    <a class="button button-full button-dark" ui-sref="measurement_mode_3({jname: 'Radial Deviation', movement: 'left_wrist_radial_deviation', joint: 'left_wrist', gen_mov: 'wrist_radial_deviation'})">Radial Deviation</a>
+    <a class="button button-full button-dark" ui-sref="measurement_mode_3({jname: 'Ulnar Deviation', movement: 'left_wrist_ulnar_deviation', joint: 'left_wrist', gen_mov: 'wrist_ulnar_deviation'})">Ulnar Deviation</a>
+    </div>
+ </ion-content>
+</ion-view>

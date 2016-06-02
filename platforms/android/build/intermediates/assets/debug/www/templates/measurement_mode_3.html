@@ -1,0 +1,34 @@
+<ion-view view-title="Measurement">
+<ion-nav-bar class="bar-dark">
+  <ion-nav-buttons side="left">
+    <a href="#/event/body" class="button button-icon button-clear ion-ios-arrow-back">Back</a>
+  </ion-nav-buttons>
+</ion-nav-bar>
+   <ion-content>
+   <div class="video_bg">
+    <div class="mini_video center">
+        <a href="#/video/{{gen_mov}}" ng-click="changeOrientationLandspace()">
+            <img class="mini" src="{{video_img}}" />
+        </a>
+    </div>
+    </div> 
+    <div class=" btn_container center">
+      <a class="button button-block button-small button-stable" href="#/modal_{{joint}}" style="font-weight: bold; font-size: 14px;">{{jname}}<i class="icon ion-arrow-down-b sep"></i>
+      </a>
+    </div>
+        <div class="radial_container center">
+        <div class="progress" id="progress" ng-click="start()"></div>
+        <img class="regla" src="img/circle.png" />
+        <img class="inner_btn" src="img/green_btn.png" style="visibility: {{greenbtn}}"/>
+        <img class="inner_btn" src="img/red_btn.png" style="visibility: {{redbtn}}"/>
+        </div>
+
+        <div class="foot_btns">
+        <center>
+          <a class="button button-small button-stable" ng-click="showToast('Measurement added to report!', 'short', 'center');insertToReport();" style=" font-weight: bold; font-size: 14px;  width: 48%;">Add to Report</a>
+         <a class="button button-small button-stable" href="#/report" style=" font-weight: bold; font-size: 14px; width: 48%;">View Report</a>  
+         </center>
+        </div>
+   </ion-content>
+</ion-view>
+

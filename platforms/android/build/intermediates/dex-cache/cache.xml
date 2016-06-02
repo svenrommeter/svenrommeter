@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\SvenROMmeter\platforms\android\libs\sqlite-connector.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="76169ab23a4f939925491c6fe186749da5a56ee9">
+        <dex dex="C:\SvenROMmeter\platforms\android\build\intermediates\pre-dexed\debug\sqlite-connector_599d5f3c62de3e0c16e666687ea794d8cf8b1d8c.jar" />
+    </item>
+    <item
+        jar="C:\ultimo update\appName\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="0178674d924f5e40dc8e85ad27cfbb2a71500a5a">
+        <dex dex="C:\ultimo update\appName\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_11bf00c226a6ddf8659f624ca587dd032546990c.jar" />
+    </item>
+    <item
+        jar="C:\SvenROMmeter\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0-alpha2\jars\libs\internal_impl-24.0.0-alpha2.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="e460bc069dfd21d22770cf2a2370c9021b9c98a2">
+        <dex dex="C:\SvenROMmeter\platforms\android\build\intermediates\pre-dexed\debug\internal_impl-24.0.0-alpha2_e3752dafa6ecc737a8e72e95ac0339939f86c490.jar" />
+    </item>
+    <item
+        jar="C:\SvenROMmeter\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0-alpha2\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="32ab8bede8cd600f25a5bb3fe15068c81c8910dc">
+        <dex dex="C:\SvenROMmeter\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.0.0-alpha2_c8014ef31ea6bd17474b8cf132e9116d3d74f849.jar" />
+    </item>
+    <item
+        jar="C:\ultimo update\appName\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0-alpha2\jars\libs\internal_impl-24.0.0-alpha2.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="e460bc069dfd21d22770cf2a2370c9021b9c98a2">
+        <dex dex="C:\ultimo update\appName\platforms\android\build\intermediates\pre-dexed\debug\internal_impl-24.0.0-alpha2_7612df9052e9ef15794b7f4053b683b1129237d0.jar" />
+    </item>
+    <item
+        jar="C:\Program Files (x86)\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\24.0.0-alpha2\support-annotations-24.0.0-alpha2.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="8071e1e6cd07e9253720313d6c14286a7ee424e0">
+        <dex dex="C:\ultimo update\appName\platforms\android\build\intermediates\pre-dexed\debug\support-annotations-24.0.0-alpha2_c38eb18e1fd4a7b4a4eb6d8e8c6171811803bca0.jar" />
+    </item>
+    <item
+        jar="C:\SvenROMmeter\platforms\android\build\intermediates\exploded-aar\org.xwalk\xwalk_core_library\18.48.477.13\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="707a1042fcbc75024eccf54ad692b125ad8f1128">
+        <dex dex="C:\SvenROMmeter\platforms\android\build\intermediates\pre-dexed\debug\org.xwalk-xwalk_core_library-18.48.477.13_6fe21aff8062efefccb590562933d7715a66a3c8.jar" />
+    </item>
+    <item
+        jar="C:\ultimo update\appName\platforms\android\libs\sqlite-connector.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="76169ab23a4f939925491c6fe186749da5a56ee9">
+        <dex dex="C:\ultimo update\appName\platforms\android\build\intermediates\pre-dexed\debug\sqlite-connector_d0d08dc68661f3fd429d943756280ee61a7ad8aa.jar" />
+    </item>
+    <item
+        jar="C:\SvenROMmeter\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="e08a67c8678a1fa951db2ccef3b1e4ca4ce1a19c">
+        <dex dex="C:\SvenROMmeter\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_5d9bf7bd7b26375a855a7725dfb38ea4813f968a.jar" />
+    </item>
+    <item
+        jar="C:\ultimo update\appName\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0-alpha2\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="32ab8bede8cd600f25a5bb3fe15068c81c8910dc">
+        <dex dex="C:\ultimo update\appName\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.0.0-alpha2_7afc2861a11a86e42429920a371fc83b0417c877.jar" />
+    </item>
+
+</items>

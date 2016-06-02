@@ -1,0 +1,16 @@
+<ion-view view-title="Right Shoulder">
+<ion-nav-bar class="bar-dark">
+  <ion-nav-buttons side="primary">
+    <a href="#/event/body" class="button button-icon button-clear">Cancel</a>
+  </ion-nav-buttons>
+</ion-nav-bar>
+ <ion-content class="padding">
+   <div class="list">
+    <a class="button button-full button-dark" ui-sref="measurement_mode_1({jname: 'Flexion', movement: 'right_shoulder_flexion', joint: 'right_shoulder', gen_mov: 'shoulder_flexion'})">Flexion</a>
+    <a class="button button-full button-dark" ui-sref="measurement_mode_1({jname: 'Extension', movement: 'right_shoulder_extension', joint: 'right_shoulder', gen_mov: 'shoulder_extension'})">Extension</a>
+    <a class="button button-full button-dark" ui-sref="measurement_mode_1({jname: 'Abduction', movement: 'right_shoulder_abduction', joint: 'right_shoulder', gen_mov: 'shoulder_abduction'})">Abduction</a>
+    <a class="button button-full button-dark" ui-sref="measurement_mode_1({jname: 'Internal Rotation', movement: 'right_shoulder_internal_rotation', joint: 'right_shoulder', gen_mov: 'shoulder_internal_rotation'})">Internal Rotation</a>
+    <a class="button button-full button-dark" ui-sref="measurement_mode_3({jname: 'External Rotation', movement: 'right_shoulder_external_rotation', joint: 'right_shoulder', gen_mov: 'shoulder_external_rotation'})">External Rotation</a>
+   </div>
+ </ion-content>
+</ion-view>

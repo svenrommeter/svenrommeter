@@ -1,0 +1,25 @@
+<ion-view view-title="User List">
+<ion-nav-bar class="bar-dark">
+  <ion-nav-back-button>
+  </ion-nav-back-button>
+  <ion-nav-buttons side="left">
+    <a href="#/event/body" class="button button-icon button-clear ion-ios-arrow-back">Back</a>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="primary">
+    <a class="button button-icon icon ion-android-person-add" href="#/home"></a>&nbsp;
+    <a class="button button-icon icon ion-android-create" href="#/user_list"></a>
+  </ion-nav-buttons>
+</ion-nav-bar>
+   <ion-content>
+        <ul class="list">
+            <div ng-repeat="users in user_list | reverse">
+                <div class="item item-button-right">
+                  <snap style="font-weight: bold">{{users.name}}</snap>
+                  <button class="button button-assertive"  ng-click="remove(users.user_id)">
+                    <i class="icon ion-android-delete"></i>
+                  </button>
+                </div>
+            </div>
+        </ul>
+   </ion-content>
+</ion-view>

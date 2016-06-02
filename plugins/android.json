@@ -1,0 +1,58 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.obk.svenometer"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.obk.svenometer"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "com.obk.svenometer"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "com.obk.svenometer"
+        },
+        "cordova-plugin-email-composer": {
+            "PACKAGE_NAME": "com.obk.svenometer"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.obk.svenometer"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "com.obk.svenometer"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.obk.svenometer"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.obk.svenometer"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.obk.svenometer"
+        },
+        "cordova-plugin-x-toast": {
+            "PACKAGE_NAME": "com.obk.svenometer"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "com.obk.svenometer"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.obk.svenometer"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "com.obk.svenometer"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.obk.svenometer"
+        }
+    }
+}

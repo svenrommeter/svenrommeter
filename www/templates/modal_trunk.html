@@ -1,0 +1,15 @@
+<ion-view view-title="Trunk">
+<ion-nav-bar class="bar-dark">
+  <ion-nav-buttons side="primary">
+    <a href="#/event/body" class="button button-icon button-clear">Cancel</a>
+  </ion-nav-buttons>
+</ion-nav-bar>
+ <ion-content class="padding">
+   <div class="list">
+    <a class="button button-full button-dark" ui-sref="measurement_mode_1({jname: 'Flexion', movement: 'trunk_flexion', joint: 'trunk', gen_mov: 'trunk_flexion'})">Flexion</a>
+    <a class="button button-full button-dark" ui-sref="measurement_mode_1({jname: 'Extension', movement: 'trunk_extension', joint:'trunk', gen_mov: 'trunk_extension'})">Extension</a>
+    <a class="button button-full button-dark" ui-sref="measurement_mode_1({jname: 'Lateral Flexion', movement: 'trunk_lateral_flexion', joint: 'trunk', gen_mov: 'trunk_lateral_flexion'})">Lateral Flexion</a>
+    <a class="button button-full button-dark" ui-sref="measurement_mode_3({jname: 'Rotation', movement: 'trunk_rotation', joint: 'trunk', gen_mov: 'trunk_rotation'})">Rotation</a>
+   </div>
+ </ion-content>
+</ion-view>

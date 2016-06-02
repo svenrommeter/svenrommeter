@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\ultimo update\\appName\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\layout-land\\date_time_picker_dialog.xml",
+        "source": "C:\\ultimo update\\appName\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\18.48.477.13\\res\\layout-land\\date_time_picker_dialog.xml"
+    },
+    {
+        "merged": "C:\\SvenROMmeter\\platforms\\android\\build\\intermediates\\res\\merged\\debug\\layout-land\\date_time_picker_dialog.xml",
+        "source": "C:\\SvenROMmeter\\platforms\\android\\build\\intermediates\\exploded-aar\\org.xwalk\\xwalk_core_library\\18.48.477.13\\res\\layout-land\\date_time_picker_dialog.xml"
+    }
+]

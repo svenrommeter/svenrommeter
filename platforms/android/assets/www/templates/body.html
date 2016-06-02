@@ -1,0 +1,23 @@
+<ion-view view-title="Select Joint">
+<ion-content ng-controller="BodyController">
+  <div>
+    <img src="img/body_5.png" class="body center" usemap="#body_map">
+    <map name="body_map">
+        <area shape="circle" coords="95,63,25"      ui-sref="measurement_mode_1({jname: 'Flexion', movement: 'neck_flexion', joint: 'neck', gen_mov: 'neck_flexion'})" alt="Neck">
+        <area shape="circle" coords="38,101,25"     ui-sref="measurement_mode_1({jname: 'Flexion', movement: 'left_shoulder_flexion', joint: 'left_shoulder', gen_mov: 'shoulder_flexion'})" alt="Left Shoulder">
+        <area shape="circle" coords="153,101,25"    ui-sref="measurement_mode_1({jname: 'Flexion', movement: 'right_shoulder_flexion', joint: 'right_shoulder', gen_mov: 'shoulder_flexion'})" alt="Right Shoulder">
+        <area shape="circle" coords="24,189,25"     ui-sref="measurement_mode_1({jname: 'Flexion/Extension', movement: 'left_elbow_flexion', joint: 'left_elbow', gen_mov: 'elbow_flexion'})" alt="Left Elbow">
+        <area shape="circle" coords="169,189,25"    ui-sref="measurement_mode_1({jname: 'Flexion/Extension', movement: 'right_elbow_flexion', joint: 'right_elbow', gen_mov: 'elbow_flexion'})" alt="Right Elbow">
+        <area shape="circle" coords="97,215,20"     ui-sref="measurement_mode_1({jname: 'Flexion', movement: 'trunk_flexion', joint: 'trunk', gen_mov: 'trunk_flexion'})" alt="Trunk">
+        <area shape="circle" coords="10,260,25"     ui-sref="measurement_mode_1({jname: 'Flexion', movement: 'left_wrist_flexion', joint: 'left_wrist', gen_mov: 'wrist_flexion'})" alt="Left Wrist">
+        <area shape="circle" coords="191,257,25"    ui-sref="measurement_mode_1({jname: 'Flexion', movement: 'right_wrist_flexion', joint: 'right_wrist', gen_mov: 'wrist_flexion'})"  alt="Right Wrist">
+        <area shape="circle" coords="69,269,20"     ui-sref="measurement_mode_1({jname: 'Flexion', movement: 'left_hip_flexion', joint: 'left_hip', gen_mov: 'hip_flexion'})" alt="Left Hip">
+        <area shape="circle" coords="127,269,20"    ui-sref="measurement_mode_1({jname: 'Flexion', movement: 'right_hip_flexion', joint: 'right_hip', gen_mov: 'hip_flexion'})"  alt="Right Hip">
+        <area shape="circle" coords="55,386,25"     ui-sref="measurement_mode_1({jname: 'Flexion/Extension', movement: 'left_knee_flexion', joint: 'left_knee', gen_mov: 'knee_flexion'})" alt="Left Knee">
+        <area shape="circle" coords="140,386,25"    ui-sref="measurement_mode_1({jname: 'Flexion/Extension', movement: 'right_knee_flexion', joint: 'right_knee', gen_mov: 'knee_flexion'})"  alt="Right Knee">
+        <area shape="circle" coords="39,499,25"     ui-sref="measurement_mode_1({jname: 'Dorsiflexion', movement: 'left_ankle_dorsiflexion', joint: 'left_ankle', gen_mov: 'ankle_dorsiflexion'})" alt="Left Ankle">
+        <area shape="circle" coords="157,499,25"    ui-sref="measurement_mode_1({jname: 'Dorsiflexion', movement: 'right_ankle_dorsiflexion', joint: 'right_ankle', gen_mov: 'ankle_dorsiflexion'})" alt="Right Ankle">
+    </map>
+  </div>
+</ion-content>
+</ion-view>
